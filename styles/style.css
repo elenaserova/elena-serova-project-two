@@ -487,13 +487,11 @@ header {
   background: rgba(0, 0, 0, 0.85);
 }
 
-@supports (position: fixed) {
-  @media only screen and (max-width: 880px) {
-    .mainMenu,
-    .mainMenu:target + .backdrop,
-    .mainMenu + .backdrop {
-      position: fixed;
-    }
+@media only screen and (max-width: 880px) {
+  .mainMenu,
+  .mainMenu:target + .backdrop,
+  .mainMenu + .backdrop {
+    position: fixed;
   }
 }
 
@@ -507,12 +505,18 @@ h1 {
   padding-top: 70px;
 }
 
+@media only screen and (max-width: 700px) {
+  h1 {
+    line-height: 74px;
+  }
+}
+
 @media only screen and (max-width: 615px) {
   h1 {
     font-size: 50px;
     font-size: 5rem;
     width: 80%;
-    line-height: 55px;
+    line-height: 64px;
   }
 }
 
@@ -622,13 +626,19 @@ button {
 
 @media only screen and (max-width: 615px) {
   .flexLearnSection {
-    padding-top: 30%;
+    padding-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .flexLearnSection {
+    padding-top: 60%;
   }
 }
 
 @media only screen and (max-width: 490px) {
   .flexLearnSection {
-    padding-top: 20%;
+    padding-top: 50%;
   }
 }
 

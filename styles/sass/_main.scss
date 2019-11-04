@@ -70,10 +70,13 @@ button {
         padding-top: 150px;
     }
     @include media(615px) {
-        padding-top: 30%;
+        padding-top: 50%;
+    }
+    @include media(525px) {
+        padding-top: 60%;
     }
     @include media(490px) {
-        padding-top: 20%;
+        padding-top: 50%;
     }
 
     .flexLearnContent {

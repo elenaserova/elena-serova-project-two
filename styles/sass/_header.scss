@@ -174,7 +174,7 @@ header {
     background: rgba(0,0,0,.85);
 }
 
-@supports (position: fixed) {
+
     .mainMenu,
     .mainMenu:target + .backdrop,
     .mainMenu + .backdrop{
@@ -182,7 +182,7 @@ header {
     position: fixed;
     }
 }
-}
+
 
 
 
@@ -194,10 +194,13 @@ h1 {
     color: $primaryColor;
     width: 60%;
     padding-top: 70px;
+    @include media(700px) {
+        line-height: 74px;
+    }
     @include media(615px) {
         @include fontSize(50);
         width: 80%;
-        line-height: 55px;
+        line-height: 64px;
     }
 }
 
