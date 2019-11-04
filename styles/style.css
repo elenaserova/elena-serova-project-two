@@ -1233,6 +1233,12 @@ button {
   border-bottom: 2px solid #0CADC0;
 }
 
+@media only screen and (max-width: 690px) {
+  .flexContactInput input {
+    width: 100%;
+  }
+}
+
 input[type="text"] {
   margin-right: 20px;
 }
@@ -1265,6 +1271,12 @@ input[type="text"] {
   }
 }
 
+@media only screen and (max-width: 490px) {
+  .contactInfo {
+    margin-left: 0px;
+  }
+}
+
 .contactInfo p {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -1278,6 +1290,7 @@ input[type="text"] {
     font-size: 20px;
     font-size: 2rem;
     text-align: center;
+    padding: 0px 10%;
   }
 }
 
@@ -1612,8 +1625,23 @@ aside img {
   border-bottom: 2px solid #0CADC0;
 }
 
+@media only screen and (max-width: 690px) {
+  .commentForm .flexContactInput input {
+    width: 100%;
+  }
+}
+
 .commentForm .flexContactInput input:focus, .commentForm .flexContactInput input:active {
   border: 1px solid #1E1713;
+}
+
+@media only screen and (max-width: 690px) {
+  .flexContactInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 textarea {

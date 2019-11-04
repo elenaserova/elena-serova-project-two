@@ -368,19 +368,19 @@ button {
         position: relative;
         top: -120px;
         left: -65px;
-            label {
-                display: none;
+        label {
+            display: none;
         }
-            input::placeholder,
-            textarea::placeholder {
-                @include fontSize(20);
-                color: #FFF;
-                opacity: 1;
-                font-family: $baseFont;
-                padding: 10px 0px;
-                letter-spacing: 1.4px;
-                @include media (565px) {
-                    @include fontSize(16);
+        input::placeholder,
+        textarea::placeholder {
+            @include fontSize(20);
+            color: #FFF;
+            opacity: 1;
+            font-family: $baseFont;
+            padding: 10px 0px;
+            letter-spacing: 1.4px;
+            @include media (565px) {
+                @include fontSize(16);
                 }
             
         }
@@ -426,6 +426,9 @@ button {
         margin: 30px 5% 15px 5%;
         input {
             width: 50%;
+            @include media(690px) {
+                width:100%;
+            }
             border: none;
             border-bottom: 2px solid $accentColor;
         }
@@ -454,6 +457,9 @@ button {
             margin-top: 0px;
             
         }
+        @include media(490px){
+            margin-left: 0px;
+        }
         p {
         font-family: $baseFont;
         @include fontSize(16);
@@ -462,9 +468,9 @@ button {
         @include media (850px) {
             @include fontSize(20);
             text-align:center;
-
+            padding:0px 10%;
+            
         }
-        
     }
 
     .tel {
@@ -689,6 +695,9 @@ button {
         margin: 30px 0px 15px 0px;
         input {
             width: 50%;
+            @include media(690px) {
+                width:100%;
+            }
             border: none;
             border-bottom: 2px solid $accentColor;
             &:focus,
@@ -697,6 +706,13 @@ button {
         }
         }
     }
+
+    .flexContactInput {
+        @include media(690px) {
+        flex-direction: column;
+        }
+    
+}
 
     textarea {
         border: 2px solid $accentColor;
