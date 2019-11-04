@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header class="blogHeader">
+        <div class="wrapper">
+            <div class="flexNav">
+                <a href="#mainMenu" id="mainMenuToggle" class="menuToggle" aria-label="Open main menu">
+                    <span class="sr-only">Open main menu</span>
+                    <span class="fa fa-bars" aria-hidden="true"></span>
+                </a>
+            
+                <p class="logo">Textilee</p>
+            
+                <nav id="mainMenu" class="mainMenu" aria-label="Main menu">
+                    <a href="#mainMenuToggle" id="mainMenuClose" class="menuClose" aria-label="Close main menu">
+                        <span class="sr-only">Close main menu</span>
+                        <span class="fa fa-close" aria-hidden="true"></span>
+                    </a>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#mainMenuToggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+            </div>
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main class="blogMain">
+        <div class="flexBlogMain">
+            <article>
+                <img src="assets/blog-post-image.jpg" alt="">
+                <div class="flexArticle">
+                    <h2>Our new collection</h2>
+                    <p class="dateAuthor">Monday, October 5th, 2019 by Saron</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laboriosam, dignissimos iure quia, cum
+                        inventore minus sint recusandae exercitationem veniam suscipit fuga fugit vitae harum ipsum a asperiores
+                        mollitia? Accusantium? Lorem ipsum dolor sit amet
+                        </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laboriosam, dignissimos iure quia, cum
+                        inventore minus sint recusandae exercitationem veniam suscipit fuga fugit vitae harum ipsum a asperiores
+                        mollitia? Accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolorem laborum
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laboriosam, dignissimos iure quia, cum
+                        inventore minus sint recusandae exercitationem veniam suscipit fuga fugit vitae harum ipsum a asperiores
+                        mollitia? Accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolorem laborum Accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolorem laborum
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laboriosam, dignissimos iure quia, cum
+                        inventore minus sint recusandae exercitationem veniam suscipit fuga fugit vitae 
+                    </p>
+                </div>
+            </article>
+            <aside>
+                <img src="assets/sidebar-image.jpg" alt="">
+                <div class="asideContent">
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit elit elit. Find out more.</p>
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><a href="#">Donec facilisis tortor ut</a></li>
+                        <li><a href="#">Augue lacinia at viverra</a></li>
+                        <li><a href="#">Semper sed sapien metus</a></li>
+                        <li><a href="#">Scelerisque nec phartera</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <section class="comments">
+            <h3>Comments:</h3>
+            <div class="commentOne">
+                <div class="commentImg">
+                    <img src="assets/comment-1.jpg" alt="">
+                </div>
+                <div class="commentContent">
+                    <p>Tuesday December 9th, 2019 by Louise</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a qui illo voluptates officiis, esse
+                        adipisci cupiditate, ab in, earum totam neque nihil rem nostrum maxime perspiciatis impedit vel
+                        doloribus?</p>
+                </div>
+            </div>
+            <div class="commentTwo">
+                <div class="commentImg">
+                    <img src="assets/comment-2.jpg" alt="">
+                </div>
+                <div class="commentContent">
+                    <p>Wednesday December 10th, 2019 by JP</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a qui illo voluptates officiis, esse
+                        adipisci
+                        cupiditate, ab in, earum totam neque nihil
+                    </p>
+                </div>
+            </div>
+            <form action="#" method="#" class="commentForm" name="commentForm">
+                <div class="flexContactInput">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                
+                    <label for="emailAddress" class="visuallyHidden">Email address</label>
+                    <input type="email" id="userEmail" name="emailAddress" placeholder="Email Address">
+                </div>
+            
+                <label for="comment" class="visuallyHidden">Comment</label>
+                <textarea id="comment" name="comment" cols="50" rows="10" placeholder="Comment"></textarea>
+            
+                <button type="button">post comment</button>
+            </form>
+        </section>
+        <section>
+            <aside class="mobileAside">
+                <div class="asideContent wrapper">
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit elit elit. Find out more.</p>
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li><a href="#">Donec facilisis tortor ut</a></li>
+                        <li><a href="#">Augue lacinia at viverra</a></li>
+                        <li><a href="#">Semper sed sapien metus</a></li>
+                        <li><a href="#">Scelerisque nec phartera</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section> 
+    </main>
+    <footer>
+        <p>Copyright © 2019 Juno College</p>
+    </footer>
+</body>
+
+</html>

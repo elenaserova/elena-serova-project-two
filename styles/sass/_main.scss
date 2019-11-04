@@ -1,0 +1,703 @@
+// Index page main section styles
+
+.learn,
+.middleMenu,
+.search {
+    background-color: $secondaryColor;
+}
+
+h2 {
+    font-family: $accentFont;
+    @include fontSize(43);
+    line-height: 68px;
+    color: $primaryColor;
+    font-weight: 400;
+    @include media(430px) {
+        line-height: 58px;
+    }
+
+}
+
+h3 {
+    font-family: $accentFont;
+    @include fontSize(40);
+    line-height: 58px;
+    letter-spacing: 2.5px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: $accentFont;
+    @include fontSize(35);
+    letter-spacing: 2.9px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+p {
+    font-family: $baseFont;
+    @include fontSize(20);
+    line-height: 28px;
+    color: $black;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-weight: 400px;
+}
+
+button {
+            width: 35%;
+            background-color: $primaryColor;
+            border: none;
+            color: white;
+            padding: 15px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            @include fontSize (30);
+            font-family: $accentFont;
+            line-height: 24px;
+            letter-spacing: 1.7px;
+            cursor: pointer;
+            
+        }
+
+.flexLearnSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 100px 0px;
+    @media (min-width: 1600px) {
+        padding-top: 150px;
+    }
+    @include media(615px) {
+        padding-top: 30%;
+    }
+    @include media(490px) {
+        padding-top: 20%;
+    }
+
+    .flexLearnContent {
+        display:flex;
+        flex-direction: column;
+        width: 65%;
+        @include media(1100px) {
+            width:55%;
+        }
+        @include media(880px) {
+            width:100%;
+        }
+        p {
+            padding-bottom: 40px;
+        }
+
+        button {
+            @include media(1180px) {
+                width: 45%;
+            }
+        }
+        
+    }
+    img {
+        display:inline-block;
+        width: 260px;
+        height: 290px;
+        box-shadow: -15px 15px $accentColor;
+        @include media(880px) {
+            display:none;
+        }
+        
+    }
+    
+}
+
+.gallery {
+    background-color: #194050;
+    padding: 80px 0px;
+    ul {
+    @include flex (row, space-between, space-between);
+    @include media(490px) {
+        @include flex (column, center, center);
+    }
+    li:nth-child(2) {
+        margin:0px 20px;
+        @include media(790px){
+        display:none;
+        }
+    }
+    li:nth-child(3) {
+        @include media(790px) {
+            margin-left:20px;
+        }
+        @include media(490px) {
+            margin-left:0px;
+            margin-top: 20px;
+        }
+    }       
+    }
+}
+
+.gallery li {
+    align-self:center;
+}
+
+
+.flexMiddleMenu  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0px;
+    @include media(768px) {
+        flex-direction: column;
+    }
+    
+}
+
+.flexMiddleMenu p {
+    padding-left: 50px;
+}
+
+.flexBlogWhole,
+.flexEventsWhole,
+.flexGetintouchWhole,
+.flexCommunityWhole {
+        width: 50%;
+        position:relative;
+        @include media (768px){
+            width:100%;
+            padding-top: 10px;
+        }
+        h2 {
+            padding-bottom: 20px;
+            padding-left: 50px;
+            
+        }
+        i {
+            @include fontSize(18); 
+            color: #FFF;
+            position: absolute;
+            top: 15px;
+            background-color: $accentColor;
+            padding: 10px 10px;
+            border-radius: 50%;
+        }
+    }
+
+.flexCommunityWhole,
+.flexGetintouchWhole {
+    @include media(950px){
+        padding-left: 20px;
+    }
+    i {
+        @include media(768px) {
+            margin-left:-20px;
+        }
+    }
+    h2 {
+        @include media(768px) {
+            padding-left:30px;
+        }
+    }
+    p {
+        @include media(768px) {
+            padding-left:30px;
+        }
+    }
+}
+
+
+.flexEventsWhole,
+.flexBlogWhole {
+    @include media(950px){
+        padding-right: 20px;
+    }
+}
+
+
+
+
+.flexBlog,
+.flexEvents,
+.flexGetintouch,
+.flexCommunity {
+    display: flex;
+    width:100%;
+    
+}
+
+.locations {
+    background-color: #194050;
+    .flexLocations {
+        display:flex;
+        justify-content: space-between;
+        @include media(850px) {
+            flex-direction: column;
+        }    
+}
+}
+
+.newLocations {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        @include media(850px) {
+            width:100%;
+        }
+        
+    img {
+        display:inline-block;
+        box-shadow: 15px 15px $accentColor;
+        position: relative;
+        top: -40px;
+    }
+    .newLocationsContent {
+        @include flex(column, flex-end,center);
+            padding: 80px 0px 60px 20%;
+            text-align: right;
+            @include media(850px) {
+                padding: 80px 10% 20px 10%;
+            }
+            p {
+                color: white;
+            }
+            button {
+                background-color: $secondaryColor;
+                color: $black;
+                margin-top: 10px;
+                align-self: flex-end;
+                width: 40%;
+                @include media(1195px){
+                    width:55%;
+                }
+        }    }
+    }
+
+.onlineMarket {
+    width: 40%;
+    @include media(850px) {
+        width:100%;
+        
+    }
+    .onlineMarketContent {
+            @include flex(column, flex-start,center);
+            padding: 80px 20% 20px 0px;
+            @include media(850px) {
+                padding: 50px 10% 50px 10%;
+            }
+            p {
+                color: white;
+            }
+            button {
+                background-color: $secondaryColor;
+                color: $black;
+                margin-top: 10px;
+                width:40%;
+                @include media(1195px){
+                    width:55%;
+                }
+            }
+        }
+    img {
+        display:inline-block;
+        box-shadow: -15px 15px $accentColor;
+        position: relative;
+        top: 40px;
+        @include media(850px) {
+            display:none;
+        }
+    
+    }
+}    
+
+
+.knots {
+    background-image: url(../assets/banner.jpg);
+    height: 500px;
+    width:100%;
+}
+
+.search {
+    padding: 120px 0px;
+}
+
+.flexSearch {
+        @include flex (column,center,center);
+        h3 {
+            align-self:center;
+            padding-bottom: 15px;
+            color: $primaryColor;
+        }
+        p {
+            text-align:center;
+            padding-bottom: 60px;
+        }
+        button {
+            align-self: center;
+            width: 25%;
+            @include media(1000px) {
+            width: 35%;
+            }
+            @include media(600px) {
+            width: 50%;
+            }
+
+        }
+    }
+
+    // Contact page main styles
+
+    .contactMain {
+        background-color: $secondaryColor;
+    }
+
+    .flexMainContact {
+        display:flex;
+        @include media(850px) {
+            flex-direction: column;
+        }
+    }
+
+    .contactForm {
+        width: 75%;
+        background-color: #194050;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        box-shadow: 20px 20px $accentColor;
+        position: relative;
+        top: -120px;
+        left: -65px;
+            label {
+                display: none;
+        }
+            input::placeholder,
+            textarea::placeholder {
+                @include fontSize(20);
+                color: #FFF;
+                opacity: 1;
+                font-family: $baseFont;
+                padding: 10px 0px;
+                letter-spacing: 1.4px;
+                @include media (565px) {
+                    @include fontSize(16);
+                }
+            
+        }
+            input,
+            textarea {
+                background-color: #194050;
+                color: white;
+                padding: 25px;
+                @include media(440px) {
+                    padding:25px 10px;
+                }
+}
+            button {
+                width: 90%;
+                background-color: $secondaryColor;
+                color: $primaryColor;
+                align-self: center;
+        }
+
+    }
+
+    .contactForm {
+        @include media(850px){
+            width: 100%;
+            left: 0px;
+            top: -150px;
+        }
+    }
+
+    .flexContactInput {
+        display: flex;
+        margin: 30px 5% 15px 5%;
+        input {
+            width: 50%;
+            border: none;
+            border-bottom: 2px solid $accentColor;
+        }
+    }
+
+    input[type="text"] {
+        margin-right: 20px;
+    }
+
+    .contactForm textarea {
+        border: 2px solid $accentColor;
+        resize: none;
+        margin: 40px 5%;
+    }
+
+    .contactInfo {
+        margin: 150px 0px 100px 100px;
+        width: 15%;
+        @include media(1000px) {
+            width:25%;
+            margin-left:50px;
+        }
+        @include media (850px) {
+            width: 100%;
+            align-self:center;
+            margin-top: 0px;
+            
+        }
+        p {
+        font-family: $baseFont;
+        @include fontSize(16);
+        letter-spacing: 1.4px;
+        padding-left:10px;
+        @include media (850px) {
+            @include fontSize(20);
+            text-align:center;
+
+        }
+        
+    }
+
+    .tel {
+        padding-top: 20px;
+    }
+
+    }
+
+    .socialMedia {
+        @include flex(row, center, center);
+        padding-bottom: 20px; 
+    
+
+            a {
+                padding: 0px 10px;
+                color: $primaryColor;
+                @include fontSize(20);
+                
+            
+            &:hover,
+            &:focus {
+                color: $accentColor;
+            }
+        }
+    }
+
+    // Blog page main section styles
+
+    .blogMain {
+        background-color: $secondaryColor;
+    }
+
+    .flexBlogMain {
+        display: flex;
+            
+    }
+
+    article {
+            display:flex;
+            flex-direction:column;
+            width: 65%;
+            background-color: #194050;
+            border-bottom: 10px solid $accentColor;
+            border-right: 10px solid $accentColor;
+            @include media (940px) {
+            width:100%;
+        }
+            
+
+            img {
+                box-shadow: 20px 20px $accentColor;
+                position: relative;
+                top: -70px;
+                left: -10px;
+                @include media (880px) {
+                    top: -120px;
+                }
+
+            }
+
+            h2,
+            p {
+                color: #FFF;
+            }
+
+            .dateAuthor {
+                color: $secondaryColor;
+            }
+
+        }
+
+    .flexArticle {
+        margin: 0px 40px 60px 15%;
+        p {
+            padding: 20px 0px;
+        }
+    }
+
+    aside {
+        margin-left: 140px;
+        margin-top: 150px;
+        width: 25%;
+        height: 50%;
+        background-color: #194050;
+        @media (min-width:1400px) {
+                margin-left: calc(140px + 5vw);
+            }
+        @include media (940px) {
+            display: none;
+        }
+        
+        img {
+            position:relative;
+            top: -15px;
+            right: -20px;
+            width: calc(100% - 20px);
+            @media (min-width:1400px) {
+                right: -1.5vw;
+            }
+        }
+        
+    }
+    
+    .asideContent {
+            padding: 30px 30px 20px 20px;
+            p {
+                color: #FFF;
+                padding-top: 10px;
+                padding-bottom: 50px;
+            }
+            ul {
+                list-style-type: disc;
+                @include fontSize(18);
+                color: #FFF;
+                padding: 10px 30px 20px 20px;
+                a {
+                    display: inline-block;
+                    color: #FFF;
+                    padding: 5px 0px;
+                    font-family: $baseFont;
+                    @include fontSize(18);
+                    letter-spacing: 2px;
+                    &:hover,
+                    &:focus {
+                        color: $accentColor;
+                    }
+                }
+            }
+        }
+
+    .comments {
+        width: 65%;
+        padding: 30px 40px 80px 10%;
+        @include media(940px) {
+            width: 100%;
+        }
+        h3 {
+            letter-spacing: 4.3px;
+            color: $primaryColor;
+            padding-bottom: 50px;
+        }
+    }
+
+    .commentOne,
+    .commentTwo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .commentOne {
+        padding-bottom: 140px;
+        @include media(690px) {
+            padding-bottom: 100px;
+        }
+    }
+
+    .commentImg {
+        width: 20%;
+        @include media(1000px) {
+            width: 25%;
+        }
+        @include media(520px) {
+            width: 30%;
+        }
+        @include media(470px) {
+            width: 40%;
+        }
+    }
+
+    .commentContent {
+        width: 80%;
+        & p:first-child {
+            font-weight: bold;
+            color: $primaryColor;
+        }
+        p {
+            @include media(470px) {
+            @include fontSize(18);
+        }
+        }
+    }
+
+    .commentForm {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        @include media (940px) {
+            padding-bottom:0px;
+        }
+            label {
+                display: none;
+        }
+            input::placeholder,
+            textarea::placeholder {
+                @include fontSize (18);
+                color: $black;
+                opacity: 1;
+                font-family: $baseFont;
+                padding: 10px 0px;
+                letter-spacing: 1.4px;
+            
+        }
+            input,
+            textarea {
+                background-color: $secondaryColor;
+                color: white;
+                padding: 25px;
+                @include media(475px) {
+                    padding: 25px 5px;
+                }
+}
+            button {
+                width: 100%;
+        }
+
+    }
+
+    .commentForm .flexContactInput {
+        display: flex;
+        margin: 30px 0px 15px 0px;
+        input {
+            width: 50%;
+            border: none;
+            border-bottom: 2px solid $accentColor;
+        }
+    }
+
+    textarea {
+        border: 2px solid $accentColor;
+        resize: none;
+        margin: 40px 0px;
+    }
+
+    .mobileAside {
+        display: none;
+        background-color: #194050;
+        text-align:center;
+        @include media(940px) {
+            display: initial;
+            
+        }
+        .asideContent {
+        width: 100%;
+        background-color: #194050;
+        padding: 50px 10% 20px 10%;
+        
+        }
+    }
+
+    

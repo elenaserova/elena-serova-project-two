@@ -1,0 +1,12 @@
+footer {
+    background-color:#161515;
+    p {
+        color: white;
+        font-size:bold;
+        text-align: center;
+        padding:10px 0px;
+        @include media (490px) {
+            @include fontSize(16);
+        }
+    }
+}

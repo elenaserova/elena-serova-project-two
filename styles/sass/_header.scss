@@ -1,0 +1,227 @@
+// Index header styles
+
+.wrapper {
+    max-width:1080px;
+    width:80%;
+    margin: 0 auto;
+    @include media(490px) {
+        width:90%;
+    }
+}
+
+header {
+    background-image: url(../assets/header-home.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 80%;
+    background-color: $secondaryColor;
+    @media (min-width: 1600px) {
+        background-size: cover;
+        height: 100vh;
+    }
+    @include media(615px) {
+        height: 70vh;
+    }
+}
+
+
+.flexNav {
+    @include flex (row, space-between, center);
+    padding-top: 25px;
+
+    .logo {
+    font-family: $accentFont;
+    @include fontSize(30);
+    line-height: 24px;
+    letter-spacing: 1.7px;
+    width:30%;
+    padding-top:5px;
+    }
+}
+
+
+.menuToggle {
+    display: inline-block;
+    @include fontSize(32);
+    color: $primaryColor;
+    position: absolute;
+    top: 25px;
+    right: 10%;
+}
+
+.menuToggle:hover,
+.menuToggle:focus {
+    color: $accentColor;
+}
+
+.menuToggle,
+.menuClose {
+    @media (min-width:880px) {
+        display:none;
+    }
+}
+
+.mainMenu {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.3s ease,
+    box-shadow 0.3s ease;
+    z-index: 999;
+    @media (min-width: 880px) {
+        display: block;
+        position:relative;
+        left: auto;
+        top: auto;
+        height: auto;
+
+    }
+    ul {
+        padding: 60px 0 10px;
+        min-height: 100%;
+        width: 30vw;
+        background: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @media (min-width: 880px) {
+            @include flex(row,flex-end,space-between);
+            background:none;
+            padding:0;
+            height: auto;
+            width: auto;
+        }
+        li {
+            padding: 0 10px;
+        
+        }
+    }
+}
+
+.mainMenu ul a {
+            display: block;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-family: $baseFont;
+            font-weight: bold;
+            line-height: 29px;
+            letter-spacing: 1.4px;
+            @include fontSize(18);
+            color: #fff;
+            &:hover,
+            &:focus {
+                background: #2b2b2b;
+                border-bottom: 2px solid rgba(12, 173, 192, 1);
+            }
+            @media (min-width: 880px) {
+                display:inline-block;
+                padding: 10px 2px;
+                @include fontSize(20);
+                color: $primaryColor;
+                &:hover,
+                &:focus {
+                border-bottom: 2px solid rgba(12, 173, 192, 1);
+                background: none;
+                }
+            }
+        }
+
+
+
+
+.menuClose,
+.mainMenu {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    color: $accentColor;
+    @include fontSize(34);
+
+}
+
+.mainMenu:target,
+.mainMenu[aria-expanded="true"] {
+    display: block;
+    right: 0;
+    outline: none;
+}
+
+.mainMenu:target .menuClose,
+.mainMenu[aria-expanded="true"] .menuClose {
+    z-index: 1001;
+}
+
+.mainMenu:target ul,
+.mainMenu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+}
+
+.mainMenu:target + .backdrop,
+.mainMenu[aria-expanded="true"] + .backdrop{
+    position: absolute;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0,0,0,.85);
+}
+
+@supports (position: fixed) {
+    .mainMenu,
+    .mainMenu:target + .backdrop,
+    .mainMenu + .backdrop{
+    @include media (880px) {
+    position: fixed;
+    }
+}
+}
+
+
+
+
+h1 {
+    font-family: $accentFont;
+    @include fontSize(58);
+    line-height: 64px;
+    color: $primaryColor;
+    width: 60%;
+    padding-top: 70px;
+    @include media(615px) {
+        @include fontSize(50);
+        width: 80%;
+        line-height: 55px;
+    }
+}
+
+header img {
+    padding-top: 80px;
+    
+    
+}
+
+// Contact page header styles
+
+.contactHeader {
+    background-image: url(../assets/contact-header.jpg);
+    background-size: cover;
+    height: 450px;
+    }
+
+// Blog page header styles
+
+.blogHeader {
+    background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    height: 450px;
+    h1 {
+        padding-top:100px;
+    }
+    }

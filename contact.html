@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/4c578886f3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="contactHeader">
+        <div class="wrapper">
+            <div class="flexNav">
+                <a href="#mainMenu" id="mainMenuToggle" class="menuToggle" aria-label="Open main menu">
+                    <span class="sr-only">Open main menu</span>
+                    <span class="fa fa-bars" aria-hidden="true"></span>
+                </a>
+
+                <p class="logo">Textilee</p>
+
+                <nav id="mainMenu" class="mainMenu" aria-label="Main menu">
+                    <a href="#mainMenuToggle" id="mainMenuClose" class="menuClose" aria-label="Close main menu">
+                        <span class="sr-only">Close main menu</span>
+                        <span class="fa fa-close" aria-hidden="true"></span>
+                    </a>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#mainMenuToggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+            </div>
+            <h1>Get in touch</h1>
+        </div>
+    </header>
+    <main class="contactMain">
+        <div class="wrapper">
+            <div class="flexMainContact">
+                <form action="#" method="#" class="contactForm" name="contactForm">
+                    <div class="flexContactInput">
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+
+                        <label for="emailAddress" class="visuallyHidden">Email address</label>
+                        <input type="email" id="userEmail" name="emailAddress" placeholder="Email Address">
+                    </div>
+
+                    <label for="message" class="visuallyHidden">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="20" placeholder="Message"></textarea>
+
+                    <button type="button">submit</button>
+                </form>
+                <div class="contactInfo">
+                    <ul class="socialMedia">
+                        <li><a href="#" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" aria-label="Call"><i aria-hidden="true" class="fas fa-phone-alt"></i></a></li>
+                    </ul>
+                    <p>info@email.com</p>
+                    <p class="tel">123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10 Toronto, Ontario M5V2D5</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2019 Juno College</p>
+    </footer>
+</body>
+
+</html>
