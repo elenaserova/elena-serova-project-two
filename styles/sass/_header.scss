@@ -110,6 +110,7 @@ header {
             font-weight: bold;
             line-height: 29px;
             letter-spacing: 1.4px;
+            border-bottom: 2px solid transparent;
             @include fontSize(18);
             color: #fff;
             &:hover,

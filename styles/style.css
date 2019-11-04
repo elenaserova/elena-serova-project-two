@@ -422,6 +422,7 @@ header {
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1.4px;
+  border-bottom: 2px solid transparent;
   font-size: 18px;
   font-size: 1.8rem;
   color: #fff;
@@ -1182,8 +1183,10 @@ button {
 .contactForm input,
 .contactForm textarea {
   background-color: #194050;
-  color: white;
+  color: #CCEDFB;
   padding: 25px;
+  font-size: 20px;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 440px) {
@@ -1191,6 +1194,13 @@ button {
   .contactForm textarea {
     padding: 25px 10px;
   }
+}
+
+.contactForm input:focus,
+.contactForm input:active,
+.contactForm textarea:focus,
+.contactForm textarea:active {
+  border: 1px solid white;
 }
 
 .contactForm button {
@@ -1571,8 +1581,11 @@ aside img {
 .commentForm input,
 .commentForm textarea {
   background-color: #CCEDFB;
-  color: white;
+  color: #1A315C;
+  font-family: "Lato", sans-serif;
   padding: 25px;
+  font-size: 20px;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 475px) {
@@ -1599,10 +1612,18 @@ aside img {
   border-bottom: 2px solid #0CADC0;
 }
 
+.commentForm .flexContactInput input:focus, .commentForm .flexContactInput input:active {
+  border: 1px solid #1E1713;
+}
+
 textarea {
   border: 2px solid #0CADC0;
   resize: none;
   margin: 40px 0px;
+}
+
+textarea:focus, textarea:active {
+  border: 1px solid #1E1713;
 }
 
 .mobileAside {
