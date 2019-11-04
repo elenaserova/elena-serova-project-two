@@ -215,8 +215,6 @@ button {
 }
 
 
-
-
 .flexBlog,
 .flexEvents,
 .flexGetintouch,
@@ -353,7 +351,7 @@ button {
 
     .flexMainContact {
         display:flex;
-        @include media(850px) {
+        @include media(950px) {
             flex-direction: column;
         }
     }
@@ -414,7 +412,7 @@ button {
     }
 
     .contactForm {
-        @include media(850px){
+        @include media(950px){
             width: 100%;
             left: 0px;
             top: -150px;
@@ -425,7 +423,7 @@ button {
         display: flex;
         margin: 30px 5% 15px 5%;
         input {
-            width: 50%;
+            width: calc(50% - 10px);
             @include media(690px) {
                 width:100%;
             }
@@ -434,8 +432,11 @@ button {
         }
     }
 
-    input[type="text"] {
-        margin-right: 20px;
+    input#name {
+        margin-right: 10px;
+    }
+    input#userEmail {
+        margin-left: 10px;
     }
 
     .contactForm textarea {
@@ -451,7 +452,7 @@ button {
             width:25%;
             margin-left:50px;
         }
-        @include media (850px) {
+        @include media (950px) {
             width: 100%;
             align-self:center;
             margin-top: 0px;
@@ -465,7 +466,7 @@ button {
         @include fontSize(16);
         letter-spacing: 1.4px;
         padding-left:10px;
-        @include media (850px) {
+        @include media (950px) {
             @include fontSize(20);
             text-align:center;
             padding:0px 10%;
@@ -568,7 +569,7 @@ button {
             right: -20px;
             width: calc(100% - 20px);
             @media (min-width:1400px) {
-                right: -1.5vw;
+                right: -1.3vw;
             }
         }
         
@@ -642,6 +643,7 @@ button {
 
     .commentContent {
         width: 80%;
+        padding-right:5%;
         & p:first-child {
             font-weight: bold;
             color: $primaryColor;
@@ -694,7 +696,7 @@ button {
         display: flex;
         margin: 30px 0px 15px 0px;
         input {
-            width: 50%;
+            width: calc(50% - 10px);
             @include media(690px) {
                 width:100%;
             }

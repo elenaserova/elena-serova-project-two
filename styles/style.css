@@ -375,7 +375,7 @@ header {
 .mainMenu ul {
   padding: 60px 0 10px;
   min-height: 100%;
-  width: 30vw;
+  width: 40vw;
   background: #1E1713;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,21 +410,23 @@ header {
   }
 }
 
-.mainMenu ul li {
-  padding: 0 10px;
+@media (min-width: 880px) {
+  .mainMenu ul li {
+    padding: 0px 10px;
+  }
 }
 
 .mainMenu ul a {
   display: block;
-  padding: 10px 15px;
+  padding: 20px 15px;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1.4px;
   border-bottom: 2px solid transparent;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   color: #fff;
 }
 
@@ -1082,7 +1084,7 @@ button {
   display: flex;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .flexMainContact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1212,7 +1214,7 @@ button {
       align-self: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .contactForm {
     width: 100%;
     left: 0px;
@@ -1228,7 +1230,7 @@ button {
 }
 
 .flexContactInput input {
-  width: 50%;
+  width: calc(50% - 10px);
   border: none;
   border-bottom: 2px solid #0CADC0;
 }
@@ -1239,8 +1241,12 @@ button {
   }
 }
 
-input[type="text"] {
-  margin-right: 20px;
+input#name {
+  margin-right: 10px;
+}
+
+input#userEmail {
+  margin-left: 10px;
 }
 
 .contactForm textarea {
@@ -1261,7 +1267,7 @@ input[type="text"] {
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .contactInfo {
     width: 100%;
     -ms-flex-item-align: center;
@@ -1285,7 +1291,7 @@ input[type="text"] {
   padding-left: 10px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .contactInfo p {
     font-size: 20px;
     font-size: 2rem;
@@ -1415,7 +1421,7 @@ aside img {
 
 @media (min-width: 1400px) {
   aside img {
-    right: -1.5vw;
+    right: -1.3vw;
   }
 }
 
@@ -1512,6 +1518,7 @@ aside img {
 
 .commentContent {
   width: 80%;
+  padding-right: 5%;
 }
 
 .commentContent p:first-child {
@@ -1620,7 +1627,7 @@ aside img {
 }
 
 .commentForm .flexContactInput input {
-  width: 50%;
+  width: calc(50% - 10px);
   border: none;
   border-bottom: 2px solid #0CADC0;
 }
