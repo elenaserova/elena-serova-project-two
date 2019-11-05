@@ -1245,8 +1245,20 @@ input#name {
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 690px) {
+  input#name {
+    margin-right: 0px;
+  }
+}
+
 input#userEmail {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 690px) {
+  input#userEmail {
+    margin-left: 0px;
+  }
 }
 
 .contactForm textarea {

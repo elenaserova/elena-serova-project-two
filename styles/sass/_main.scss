@@ -434,9 +434,15 @@ button {
 
     input#name {
         margin-right: 10px;
+        @include media(690px) {
+            margin-right:0px;
+        }
     }
     input#userEmail {
         margin-left: 10px;
+        @include media(690px) {
+            margin-left:0px;
+        }
     }
 
     .contactForm textarea {
