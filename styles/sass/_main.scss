@@ -575,7 +575,10 @@ button {
             right: -20px;
             width: calc(100% - 20px);
             @media (min-width:1400px) {
-                right: -1.3vw;
+                right: -1.1vw;
+            }
+            @media (min-width:2000px) {
+                right: -0.9vw;
             }
         }
         

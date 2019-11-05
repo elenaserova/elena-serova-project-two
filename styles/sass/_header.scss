@@ -64,6 +64,16 @@ header {
     }
 }
 
+.menuClose,
+.mainMenu {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    color: $accentColor;
+    @include fontSize(34);
+
+}
+
 .mainMenu {
     position: absolute;
     display: none;
@@ -139,15 +149,7 @@ header {
 
 
 
-.menuClose,
-.mainMenu {
-    position: absolute;
-    right: 10%;
-    top: 20px;
-    color: $accentColor;
-    @include fontSize(34);
 
-}
 
 .mainMenu:target,
 .mainMenu[aria-expanded="true"] {
@@ -210,6 +212,10 @@ h1 {
 
 header img {
     padding-top: 80px;
+    @media (min-width: 2000px) {
+        transform: scale(1.4);
+        padding-top: 170px;
+    }
     
     
 }

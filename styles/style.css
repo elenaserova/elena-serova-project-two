@@ -347,6 +347,16 @@ header {
   }
 }
 
+.menuClose,
+.mainMenu {
+  position: absolute;
+  right: 10%;
+  top: 20px;
+  color: #0CADC0;
+  font-size: 34px;
+  font-size: 3.4rem;
+}
+
 .mainMenu {
   position: absolute;
   display: none;
@@ -449,16 +459,6 @@ header {
   }
 }
 
-.menuClose,
-.mainMenu {
-  position: absolute;
-  right: 10%;
-  top: 20px;
-  color: #0CADC0;
-  font-size: 34px;
-  font-size: 3.4rem;
-}
-
 .mainMenu:target,
 .mainMenu[aria-expanded="true"] {
   display: block;
@@ -525,6 +525,14 @@ h1 {
 
 header img {
   padding-top: 80px;
+}
+
+@media (min-width: 2000px) {
+  header img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    padding-top: 170px;
+  }
 }
 
 .contactHeader {
@@ -1433,7 +1441,13 @@ aside img {
 
 @media (min-width: 1400px) {
   aside img {
-    right: -1.3vw;
+    right: -1.1vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  aside img {
+    right: -0.9vw;
   }
 }
 
