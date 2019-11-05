@@ -208,6 +208,9 @@ h1 {
         width: 80%;
         line-height: 64px;
     }
+    @include media(490px) {
+        padding-left:5px;
+    }
 }
 
 header img {

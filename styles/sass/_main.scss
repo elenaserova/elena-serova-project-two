@@ -78,6 +78,10 @@ button {
     @include media(490px) {
         padding-top: 50%;
     }
+    @include media(380px) {
+        padding-top: 55%;
+    }
+
 
     .flexLearnContent {
         display:flex;
